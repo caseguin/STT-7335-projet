@@ -1,0 +1,14 @@
+```mermaid
+flowchart TD
+    B["Modèle 1"]--> C{"Volatilité  = 1?"}
+    C -- Non --> D["Signal = 0 <br/> Rester hors marché"]
+    C -- Oui --> E["Modèle 2 — Direction"]
+    E --> F{"Direction = Hausse?"}
+    F -- Non --> G["Signal = 0 <br/>Rester hors marché"]
+    F -- Oui --> H["Signal = 1 <br/>Entrer dans le marché"]
+
+    style D fill:#F5C4B3,stroke:none
+    style G fill:#F5C4B3,stroke:none
+    style H fill:#9FE1CB,stroke:none
+
+```
